@@ -4,5 +4,9 @@ def format_participants(names):
 
     elif len(names) == 2:
         return f"{names[0]} & {names[1]}"
+
+    else:
+        return f"{names[0]}, {' & '.join(names[1:])}"
+
     
     
