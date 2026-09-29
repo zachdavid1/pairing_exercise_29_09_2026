@@ -23,20 +23,24 @@ Order is kept: names appear in the same order they were given.
 ## 2 function signature
 ```python
 # Parameters:
-# - 
+# - list of participants' names
 # Return type:
-# - 
+# - string of formatted participants
 # Side Effects:
-# - 
-def your_function():
+# - none
+def format_participants(names):
     pass
 ```
 
 ## 3 exampples
 ```python
-# scenario 1
+One participant: just their name.
+["Bart"] => "Bart"
 
-# scenario 2
+Two participants: joined with an ampersand.
+["Bart", "Lisa"] => "Bart & Lisa"
 
-# scenario 3
+Three or more participants: commas between names, with an ampersand before the last one.
+["Bart", "Lisa", "Maggie"] => "Bart, Lisa & Maggie"
+
 ```
